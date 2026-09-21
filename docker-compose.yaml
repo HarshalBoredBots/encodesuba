@@ -1,0 +1,16 @@
+services:
+  video-encoder-bot:
+    build: .
+    container_name: encode-bot
+    restart: unless-stopped
+    mem_limit: 950m
+    env_file:
+      - .env
+    volumes:
+      - ./src/bin:/app/src/bin
+      - ./encode_bot.session:/app/encode_bot.session
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

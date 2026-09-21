@@ -1,0 +1,44 @@
+{
+  "name": "EncodeTojiBot",
+  "description": "Telegram's best Video Encoder Bot",
+  "logo": "https://telegra.ph/file/0e369e097843b0dc4b771.jpg",
+  "keywords": [
+    "telegram",
+    "best",
+    "video",
+    "Encoder",
+    "bot"
+  ],
+  "env": {
+    "ADMIN_IDS": {
+      "description": "Admins IDs",
+      "value": ""
+    },
+    "ALLOWED_GROUP_IDS": {
+      "description": "Keep this as your Group chat ID where you will add the bot",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string. Get this from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "DC": {
+      "description": "File's DC",
+      "value": "",
+      "required": true
+    }
+  },
+  "stack": "container"
+}
